@@ -9,19 +9,19 @@ class HeaderLinks extends Component {
                     <li className="bellotero-nav__item">
                         <a href="#">Home</a>
                     </li>
-                    <li>
+                    <li className="bellotero-nav__item">
                         <a href="#">Solutions</a>
                     </li>
-                    <li>
+                    <li className="bellotero-nav__item">
                         <a href="#">Stories</a>
                     </li>
-                    <li>
+                    <li className="bellotero-nav__item">
                         <a href="#">Partners</a>
                     </li>
-                    <li>
+                    <li className="bellotero-nav__item">
                         <a href="#">About</a>
                     </li>
-                    <li>
+                    <li className="bellotero-nav__item">
                         <a href="#">Blog</a>
                     </li>
                 </ul>

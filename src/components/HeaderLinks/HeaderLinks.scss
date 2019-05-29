@@ -14,7 +14,13 @@
             cursor: pointer;
 
             a {
-                color: blue;
+                color: $primary-color;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.3px;
+                height: 16px;
+
                 &:hover {
                     text-decoration: none;
                 }
