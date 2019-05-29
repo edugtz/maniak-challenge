@@ -1,0 +1,24 @@
+.nav-container {
+    width: 50%;
+
+    .bellotero-nav {
+        align-items: center;
+        display: flex;
+        height: 64px;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .bellotero-nav__item {
+            cursor: pointer;
+
+            a {
+                color: blue;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

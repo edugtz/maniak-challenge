@@ -1,12 +1,20 @@
-import React from "react";
-import "./App.scss";
+import React, { Component } from "react";
+import { Container }from 'reactstrap';
 
-const App = () => {
-  return (
-    <div className="App-text-color">
-        <h1>React App</h1>
-    </div>
-  );
+import "./App.scss";
+import Header from "../../components/Header";
+
+class App extends Component {
+  render() {
+    return(
+      <div className="container">
+        <Header />
+      </div>
+      // <Container>
+      //   <h1>Pex</h1>
+      // </Container>
+    );
+  }
 };
 
 export default App;

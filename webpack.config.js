@@ -1,4 +1,5 @@
 const path = require("path");
+const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -19,7 +20,28 @@ module.exports = {
       },
       {
         test: /.(css|scss)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader, 
+          "css-loader",
+          {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'expanded',
+              data: '@import "variables";',
+              includePaths: [
+                path.resolve(__dirname, './src/scss'),
+              ],
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                autoprefixer,
+              ],
+            },
+          },
+        ]
       },
       {
         test: /.(jpg|jpeg|png|gif|mp3|svg)$/,
