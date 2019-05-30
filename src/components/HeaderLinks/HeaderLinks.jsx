@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
+import { getAppData } from '../../api/api';
 import './HeaderLinks.scss';
 
 class HeaderLinks extends Component {
+
+    componentDidMount() {
+        getAppData()
+            .then(response => console.log(response.data.menu));
+    }
+
     render() {
         return(
             <nav className="nav-container">
@@ -30,4 +38,4 @@ class HeaderLinks extends Component {
     }
 };
 
-export default HeaderLinks;
+export default withRouter(HeaderLinks);
