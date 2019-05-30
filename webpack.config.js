@@ -59,6 +59,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+    hot: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
