@@ -48,6 +48,10 @@
                 a {
                     padding-top: 4px;
                     padding-bottom: 4px;
+
+                    &.active-item {
+                        border-top: 3px solid $primary-color;
+                    }
                 }
             }
         }

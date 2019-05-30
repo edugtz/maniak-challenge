@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import CustomTitle from '../../components/CustomTitle';
 
 const NotFound = () => (
-    <div>
-        <h1>404 Not Found</h1>
+    <div className="container">
+        <div className="h-100 row justify-content-center">
+            <CustomTitle text="Oh no! Looks like something wrong happened." />
+        </div>
     </div>
 );
 

@@ -18,4 +18,4 @@ export const getPageOneData = () => {
 
 export const getPageTwoData = () => {
     return api.get(routes.PAGE_TWO); 
-}
+};
