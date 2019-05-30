@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.resolve(__dirname, "src", "index.js"),
   output: {
-    path: path.join(__dirname, "build"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js"
   },
   module: {
@@ -62,12 +62,12 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './',
-    hot: true
+    // hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: path.join(__dirname, "public", "index.html")
+      filename: "./index.html",
+      template: path.resolve(__dirname, "public", "index.html")
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

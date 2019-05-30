@@ -9,13 +9,17 @@ import Testimonial from './pages/Testimonial';
 const Routes = () => {
     return (
         <div>
-            <Header />
-            <Switch>
-                <Route exact={true} path="/" component={App} />
-                <Route exact path="/configurator" component={Configurator} />
-                <Route exact path="/testimonial" component={Testimonial} />
-                <Route component={NotFound} />
-            </Switch>
+            <div className="container">
+                <Header />
+            </div>
+            <div className="main-app-container">
+                <Switch>
+                    <Route exact={true} path="/" component={App} />
+                    <Route exact path="/page-1" component={Configurator} />
+                    <Route exact path="/page-2" component={Testimonial} />
+                    <Route component={NotFound} />
+                </Switch>
+            </div>
         </div>
     );
 };

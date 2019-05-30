@@ -1,5 +1,5 @@
 .nav-container {
-    width: 50%;
+    width: 40%;
 
     .bellotero-nav {
         align-items: center;
@@ -20,10 +20,14 @@
                 line-height: normal;
                 letter-spacing: 0.3px;
                 height: 16px;
+                text-decoration: none;
+                padding-top: 20px;
 
-                &:hover {
-                    text-decoration: none;
+                &.active-item {
+                    font-weight: bold;
+                    border-top: 4px solid $primary-color;
                 }
+
             }
         }
     }
