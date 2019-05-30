@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Configurator = () => {
-    return (
-        <div>
-            <h1>Hello from Configurator (Page 1)</h1>
-        </div>
-    )
+class Configurator extends Component {
+    render() {
+        return (
+            <div className="container">
+                <div className="row justify-content-between">
+                    <div className="col-4">
+                        One 
+                    </div>
+                    <div className="col-6">
+                        Two
+                    </div>
+                </div>
+            </div>
+        );
+    }
 };
 
 export default Configurator;

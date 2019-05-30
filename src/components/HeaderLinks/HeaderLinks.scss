@@ -36,3 +36,20 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+
+        .bellotero-nav {
+            height: $navbar-height-responsive;
+            
+            .bellotero-nav__item {
+                a {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+    }
+}

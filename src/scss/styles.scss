@@ -1,4 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import './variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     background-color: $background-color;
@@ -13,4 +20,10 @@ html {
 }
 
 .main-app-container {
+    background-color: #f0f2ff;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: calc(100vh -  #{$navbar-height});
+    min-height: calc(100vh -  #{$navbar-height});
 }

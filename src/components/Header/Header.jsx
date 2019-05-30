@@ -9,7 +9,7 @@ class Header extends React.Component {
     return (
         <div className="main-navbar">
             <NavLink to="/">
-              <img src={logo} alt="bellotero-logo" />
+              <img className="bellotero-logo" src={logo} alt="bellotero-logo" />
             </NavLink>
             <HeaderLinks />
         </div>

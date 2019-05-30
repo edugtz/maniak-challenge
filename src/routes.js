@@ -13,12 +13,16 @@ const Routes = () => {
                 <Header />
             </div>
             <div className="main-app-container">
-                <Switch>
-                    <Route exact={true} path="/" component={App} />
-                    <Route exact path="/page-1" component={Configurator} />
-                    <Route exact path="/page-2" component={Testimonial} />
-                    <Route component={NotFound} />
-                </Switch>
+                {/* <div className="container-fluid"> */}
+                    {/* <div className="container"> */}
+                        <Switch>
+                            <Route exact={true} path="/" component={App} />
+                            <Route exact path="/page-1" component={Testimonial} />
+                            <Route exact path="/page-2" component={Configurator} />
+                            <Route component={NotFound} />
+                        </Switch>
+                    {/* </div> */}
+                {/* </div> */}
             </div>
         </div>
     );

@@ -2,7 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: $navbar-height;
-    height: $navbar-height;
+    flex-direction: row;
+    min-height: $navbar-height;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .main-navbar {
+        flex-direction: column;
+
+        .bellotero-logo {
+            padding: 8px 0;
+        }
+    }
 }
 
