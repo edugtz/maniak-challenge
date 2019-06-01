@@ -1,5 +1,6 @@
 const initialState = {
-    slider: {},
+    title: '',
+    reviews: [{}],
     error: null
 };
   
@@ -12,10 +13,10 @@ export default function testimonialReducer(state = initialState, action) {
         case 'GET_TESTIMONIAL_DATA_SUCCESS':
             return {
                 ...state,
-                slider: { 
-                    ...state.slider, 
-                    ...action.payload 
-                },
+                title: action.payload.title,
+                reviews: [
+                    ...action.payload.reviews
+                ],
                 error: null
             };
         case 'GET_TESTIMONIAL_DATA_FAILURE':

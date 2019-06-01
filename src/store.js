@@ -1,5 +1,5 @@
 import { applyMiddleware, combineReducers, createStore, compose } from 'redux';
-import { logger } from 'redux-logger';
+// import { logger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import testimonialReducer from './reducers/testimonialReducer';
 import configuratorReducer from './reducers/configuratorReducer';
@@ -11,7 +11,6 @@ const composeEnhancers = process.env.NODE_ENV !== 'production' && window ?
 
 const enhancer = composeEnhancers(
     applyMiddleware(
-        logger,
         thunkMiddleware
     )
 );

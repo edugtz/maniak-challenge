@@ -3,6 +3,7 @@ import './Testimonial.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getTestimonialData } from '../../actions/testimonialActions';
+import Slider from '../../components/Slider';
 
 class Testimonial extends Component {
     componentDidMount() {
@@ -10,13 +11,18 @@ class Testimonial extends Component {
     }
 
     render() {
-        console.log(this.props);
+        const { title, reviews } = this.props;
         return (
-            <div className="container">
+            <div className="container testimonial-container">
                 <div className="row">
-                    <div className="testimonial-container">
-                        <div className="col-md-4">
-                            <h1>{this.props.slider.title}</h1>
+                    <div className="col-md-5">
+                        <h1 className="testimonial-title">{title}</h1>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-11">
+                        <div className="testimonial-reviews">
+                            <Slider reviews={reviews} />
                         </div>
                     </div>
                 </div>
@@ -30,9 +36,9 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
-        slider: state.testimonial.slider
+        title: state.testimonial.title,
+        reviews: state.testimonial.reviews
     }
 }
 

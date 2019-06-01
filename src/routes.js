@@ -8,11 +8,11 @@ import Testimonial from './pages/Testimonial';
 
 const Routes = () => {
     return (
-        <div>
+        <div className="main-app-wrapper">
             <div className="container">
                 <Header />
             </div>
-            <div className="main-app-container">
+            <div className="main-content-container">
                 <Switch>
                     <Route exact={true} path="/" component={App} />
                     <Route exact path="/page-1" component={Testimonial} />

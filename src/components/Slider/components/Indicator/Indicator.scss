@@ -1,0 +1,24 @@
+.indicator-container {
+    color: #fff;
+    padding: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 19px;
+    width: 120px;
+    height: 56px;
+    background-color: $primary-color;
+
+    .indicator-text {
+        width: 35px;
+        height: 32px;
+        font-family: CormorantGaramond;
+        font-size: 32px;
+        font-weight: 600;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.7px;
+        color: #ffffff;
+    }
+}

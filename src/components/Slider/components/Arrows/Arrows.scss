@@ -1,0 +1,22 @@
+.arrows-container {
+    color: #fff;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px;
+    width: 120px;
+    height: 56px;
+    background-color: $primary-color;
+    border-left: 1px solid #fff;
+    
+    .review-arrow {
+        font-size:32px;
+
+        .fa-arrow-right, .fa-arrow-left {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
