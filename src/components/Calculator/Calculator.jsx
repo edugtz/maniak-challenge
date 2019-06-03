@@ -68,14 +68,9 @@ class Calculator extends Component {
 
     calculateSavings = () => {
         const { monthlySpending, employeeCount } = this.state;
-        console.log('Monthly spending: ', monthlySpending);
-        console.log('Employees: ', employeeCount);
 
         const estimatedFoodCostSavings = Number((monthlySpending) * 0.3).toFixed(1);
         const estimatedAnnualSavings = Number((employeeCount) * 1337 + estimatedFoodCostSavings).toFixed(1);
-
-        console.log('Estimated food savings: ', estimatedFoodCostSavings);
-        console.log('Estimated annual savings: ', estimatedAnnualSavings);
 
         this.setState(() => ({
             estimatedAnnualSavings,

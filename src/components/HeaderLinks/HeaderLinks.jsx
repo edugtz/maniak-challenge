@@ -1,5 +1,3 @@
-// import React, { Component } from 'react';
-
 import React, { useState, useEffect } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import { getAppData } from '../../api/api';
@@ -39,6 +37,6 @@ const HeaderLinks = () => {
             </ul>
         </nav>
     );
-}
+};
 
 export default withRouter(HeaderLinks);
