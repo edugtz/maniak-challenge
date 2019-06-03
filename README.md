@@ -37,5 +37,7 @@ The **app** will start running on `http://localhost:8080`
 To run the tests cases inside the project just use the following command:
 
 ```
-npm test or npm run test
+npm test 
+or 
+npm run test
 ```
