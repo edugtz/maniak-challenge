@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getConfiguratorData } from '../../actions/configuratorActions';
 import Calculator from '../../components/Calculator';
+import CustomTitle from '../../components/CustomTitle';
 
 class Configurator extends Component {
     componentDidMount() {
@@ -20,8 +21,8 @@ class Configurator extends Component {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="configurator-title-wrapper">
-                            <h1 className="configurator-title">{titlePartOne}</h1>
-                            <h1 className="configurator-title">{titlePartTwo}</h1>  
+                            <CustomTitle text={titlePartOne} />
+                            <CustomTitle text={titlePartTwo} />
                         </div>
                         <div className="configurator-description-container">
                             <p className="configurator-description">{description}</p>

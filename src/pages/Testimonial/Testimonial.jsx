@@ -3,6 +3,7 @@ import './Testimonial.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getTestimonialData } from '../../actions/testimonialActions';
+import CustomTitle from '../../components/CustomTitle';
 import Slider from '../../components/Slider';
 
 class Testimonial extends Component {
@@ -16,7 +17,7 @@ class Testimonial extends Component {
             <div className="container testimonial-container">
                 <div className="row">
                     <div className="col-md-5">
-                        <h1 className="testimonial-title">{title}</h1>
+                        <CustomTitle text={title} />
                     </div>
                 </div>
                 <div className="row">

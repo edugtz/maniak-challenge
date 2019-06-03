@@ -1,3 +1,9 @@
-.bellotero-title {
-    margin-top: 184px;
+.custom-title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.11;
+    letter-spacing: 0.8px;
+    color: #fff;
+    background-color: $primary-color;
+    padding: 8px;
 }

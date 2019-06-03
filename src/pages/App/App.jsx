@@ -3,7 +3,7 @@ import CustomTitle from '../../components/CustomTitle';
 
 const App = () => (
     <div className="container">
-        <div className="row justify-content-center">
+        <div className="row">
             <CustomTitle text="Welcome to Bellotero.io" />
         </div>
     </div>

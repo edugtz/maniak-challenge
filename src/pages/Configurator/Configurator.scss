@@ -5,14 +5,7 @@
     .configurator-title-wrapper {
         display: block;
         
-        .configurator-title {
-            font-size: 36px;
-            font-weight: 900;
-            line-height: 1.11;
-            letter-spacing: 0.8px;
-            color: #fff;
-            background-color: $primary-color;
-            padding: 8px;
+        .custom-title {
             display: inline-block;
         }
     }
