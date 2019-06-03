@@ -12,7 +12,9 @@ class Calculator extends Component {
 
         this.handleEmployeeChangeSlider = this.handleEmployeeChangeSlider.bind(this);
         this.handleSpendingChangeSlider = this.handleSpendingChangeSlider.bind(this);
+        
         this.handleEmployeeChangeInput = this.handleEmployeeChangeInput.bind(this);
+        this.handleSpendingChangeInput = this.handleSpendingChangeInput.bind(this);
 
         this.state = {
             employeeCount: 1,
