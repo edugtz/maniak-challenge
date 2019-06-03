@@ -13,27 +13,25 @@ html, body {
 }
 
 body {
-    background-color: $background-color;
+    background-color: #ffffff;
     font-family: $font-family;
     font-size: $font-size;
     font-weight: 500;
     min-height: 100%;
 }
 
-html {
-    background-color: $background-color;
-}
 
 #app {
     height: 100%;
 
     .main-app-wrapper {
         height: 100%;
+        background-color: #ffffff;
 
         .main-content-container {
             color: $primary-color;
             padding: 185px 0;
-            background-color: #f0f2ff;
+            background-color: #f9faff;
             margin-right: auto;
             margin-left: auto;
             width: 100%;

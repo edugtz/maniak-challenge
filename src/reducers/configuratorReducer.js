@@ -1,5 +1,6 @@
 const initialState = {
-    calculator: {},
+    title: '',
+    description: '',
     error: null
 };
   
@@ -12,10 +13,8 @@ export default function configuratorReducer(state = initialState, action) {
         case 'GET_CONFIGURATOR_DATA_SUCCESS':
             return {
                 ...state,
-                calculator: { 
-                    ...state.calculator, 
-                    ...action.payload 
-                },
+                title: action.payload.title,
+                description: action.payload.description,
                 error: null
             };
         case 'GET_CONFIGURATOR_DATA_FAILURE':

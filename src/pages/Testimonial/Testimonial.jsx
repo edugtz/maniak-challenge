@@ -39,8 +39,8 @@ const mapStateToProps = (state) => {
     return {
         title: state.testimonial.title,
         reviews: state.testimonial.reviews
-    }
-}
+    };
+};
 
 export default connect(
     mapStateToProps,

@@ -1,0 +1,21 @@
+.spending-estimation-icon {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.8px;
+    padding-right: 8px;
+}
+
+.spending-estimation {
+    font-size: 70px;
+    font-weight: 500;
+    color: $primary-color;
+    line-height: 1;
+    text-align: right;
+}
+
+.spending-estimation-description {
+    color: $black-color;
+    text-align: right;
+    font-size: $font-size;
+}
